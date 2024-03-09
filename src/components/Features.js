@@ -15,6 +15,7 @@ import ViewQuiltRoundedIcon from '@mui/icons-material/ViewQuiltRounded';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import EngineeringIcon from '@mui/icons-material/Engineering';
 import TroubleshootIcon from '@mui/icons-material/Troubleshoot';
+import { CardContent } from '@mui/material';
 
 const items = [
   {
@@ -342,7 +343,7 @@ export default function Features() {
                   ))}
                 </ul>
 
-                <strong style={{ color: '#af3f3b' }}>Deadline:</strong> {items[selectedItemIndex].deadline}<br />
+                <strong style={{ color: 'af3f3b' }}>Deadline:</strong> {items[selectedItemIndex].deadline}<br />
                 <strong style={{ color: 'green' }}>Status:</strong> {items[selectedItemIndex].status}
               </Typography>
 

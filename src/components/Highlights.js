@@ -11,6 +11,7 @@ import QueryStatsRoundedIcon from '@mui/icons-material/QueryStatsRounded';
 import SettingsSuggestRoundedIcon from '@mui/icons-material/SettingsSuggestRounded';
 import SupportAgentRoundedIcon from '@mui/icons-material/SupportAgentRounded';
 import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
+import { useTheme } from '@mui/system';
 
 const items = [
   {
@@ -120,17 +121,17 @@ const groupedItems = items.reduce((acc, item) => {
 }, {});
 
 export default function Highlights() {
+  const theme = useTheme();
+
   return (
-    <Box
+    <Container
       id="highlights"
       sx={{
         pt: { xs: 4, sm: 12 },
         pb: { xs: 8, sm: 16 },
-        color: 'white',
-        bgcolor: '#06090a',
       }}
     >
-      <Container
+      <Box
         sx={{
           position: 'relative',
           display: 'flex',
@@ -170,17 +171,13 @@ export default function Highlights() {
                       sx={{
                         p: 3,
                         height: '100%',
-                        border: '1px solid',
-                        borderColor: 'grey.800',
-                        background: 'transparent',
-                        backgroundColor: 'grey.900',
                       }}
                     >
                       <div>
                         <Typography fontWeight="medium" gutterBottom>
                           {item.title}
                         </Typography>
-                        <Typography variant="body2" sx={{ color: 'grey.400' }}>
+                        <Typography variant="body2" color="text.secondary">
                           {item.description}
                         </Typography>
                       </div>
@@ -191,7 +188,7 @@ export default function Highlights() {
             </Grid>
           ))}
         </Grid>
-      </Container>
-    </Box>
+      </Box>
+    </Container>
   );
 }
