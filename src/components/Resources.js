@@ -7,7 +7,8 @@ import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 
-import pdf from "../assets/M1.pdf";
+import inception from "../assets/M1.pdf";
+import elaboration from "../assets/M2.pdf";
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -62,7 +63,30 @@ export default function Resources() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              Click <Link href={pdf} download="Inception.pdf">here</Link> to download the presentation.
+              Click <Link href={inception} download="Inception.pdf">here</Link> to download the presentation.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          expanded={expanded === 'panel2'}
+          onChange={handleChange('panel2')}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2d-content"
+            id="panel2d-header"
+          >
+            <Typography component="h3" variant="subtitle2">
+                M2: Elaboration
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography
+              variant="body2"
+              gutterBottom
+              sx={{ maxWidth: { sm: '100%', md: '70%' } }}
+            >
+              Click <Link href={elaboration} download="Elaboration.pdf">here</Link> to download the presentation.
             </Typography>
           </AccordionDetails>
         </Accordion>
