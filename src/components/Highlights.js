@@ -76,27 +76,27 @@ const items = [
   },
   {
     module: 'Development',
-    title: 'Task 1 (TBD)',
+    title: 'Task 1 (Diogo Marto & Tiago Pereira)',
     description:
-    'Retrieve raw key material from QKD devices.',
+    'Implement a QKD simulator capable of generating both binary and real outputs, and define a method for storing the raw generated data.',
   },
   {
     module: 'Development',
-    title: 'Task 2 (TBD)',
+    title: 'Task 2 (Vítor Santos & David Cobileac)',
     description:
-    'Distillate both symmetric and oblivious keys in a coordinated protocol with another peer reconciliation application. Assuring correctness, security and efficiency.',
+    'Define the reconciliation architecture and implement the basic functionality of the system.',
   },
   {
     module: 'Development',
-    title: 'Task 3 (TBD)',
+    title: 'Task 3 (Vítor Santos & David Cobileac)',
     description:
-    'Provide the generated keys to the KML.',
+    'Integrate the ETSI-QKD-004 standard on the reconciliation\'s end.',
   },
   {
     module: 'Development',
-    title: 'Task 4 (TBD)',
+    title: 'Task 4 (Tiago Portugal)',
     description:
-    'Verify international and EU standards specified by institutions such as ETSI 1 and ITU-T.',
+    'Make a libray out of the system.',
   },
   {
     module: 'Development',
