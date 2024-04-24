@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 
 import inception from "../assets/M1.pdf";
 import elaboration from "../assets/M2.pdf";
+import prototype from "../assets/M3.pdf";
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -87,6 +88,29 @@ export default function Resources() {
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
               Click <Link href={elaboration} download="Elaboration.pdf">here</Link> to download the presentation.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          expanded={expanded === 'panel3'}
+          onChange={handleChange('panel3')}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel3d-content"
+            id="panel3d-header"
+          >
+            <Typography component="h3" variant="subtitle2">
+                M3: Prototype 
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography
+              variant="body2"
+              gutterBottom
+              sx={{ maxWidth: { sm: '100%', md: '70%' } }}
+            >
+              Click <Link href={prototype} download="Prototype.pdf">here</Link> to download the presentation.
             </Typography>
           </AccordionDetails>
         </Accordion>
