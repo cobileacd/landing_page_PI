@@ -40,7 +40,7 @@ const items = [
     ],
 
     deadline:'05/03/2024',
-    status:'on-going',
+    status:'Done',
     
     imageLight: 'url("/static/images/templates/templates-images/dash-light.png")',
     imageDark: 'url("/static/images/templates/templates-images/dash-dark.png")',
@@ -70,7 +70,7 @@ const items = [
     ],
 
     deadline:'28/03/2024',
-    status:'Yet to be started',
+    status:'Done',
     
     imageLight: 'url("/static/images/templates/templates-images/dash-light.png")',
     imageDark: 'url("/static/images/templates/templates-images/dash-dark.png")',
@@ -106,7 +106,7 @@ const items = [
     ],
 
     deadline:'16/04/2024',
-    status:'Yet to be started',
+    status:'Done',
     
     imageLight: 'url("/static/images/templates/templates-images/dash-light.png")',
     imageDark: 'url("/static/images/templates/templates-images/dash-dark.png")',
@@ -144,7 +144,7 @@ const items = [
 
 
     deadline:'~04/05/2024',
-    status:'Yet to be started',
+    status:'In progress',
 
     imageLight: 'url("/static/images/templates/templates-images/devices-light.png")',
     imageDark: 'url("/static/images/templates/templates-images/devices-dark.png")',

@@ -120,12 +120,12 @@ const groupedItems = items.reduce((acc, item) => {
   return acc;
 }, {});
 
-export default function Highlights() {
+export default function Tasks() {
   const theme = useTheme();
 
   return (
     <Container
-      id="highlights"
+      id="tasks"
       sx={{
         pt: { xs: 4, sm: 12 },
         pb: { xs: 8, sm: 16 },

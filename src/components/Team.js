@@ -9,7 +9,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import { useTheme } from '@mui/system';
 
-const userTestimonials = [
+const teamComp = [
   {
     avatar: <Avatar alt="Diogo Marto" src="/static/images/avatar/1.jpg" />,
     name: 'Diogo Marto',
@@ -75,13 +75,13 @@ const logoStyle = {
   opacity: 0.3,
 };
 
-export default function Testimonials() {
+export default function Team() {
   const theme = useTheme();
   const logos = theme.palette.mode === 'light' ? darkLogos : whiteLogos;
 
   return (
     <Container
-      id="testimonials"
+      id="team"
       sx={{
         pt: { xs: 4, sm: 12 },
         pb: { xs: 8, sm: 16 },
@@ -106,7 +106,7 @@ export default function Testimonials() {
         </Typography>
       </Box>
       <Grid container spacing={2}>
-        {userTestimonials.map((testimonial, index) => (
+        {teamComp.map((testimonial, index) => (
           <Grid item xs={12} sm={6} md={4} key={index} sx={{ display: 'flex' }}>
             <Card
               sx={{

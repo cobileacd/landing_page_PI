@@ -72,7 +72,6 @@ export default function Hero() {
 
           <br/>
           <Divider/>
-          <br/>
 
           <Typography variant="body1" color="text.secondary">
             Our goal is to develop an application with which given the right equipment two parties could exchange a symmetric key remotely and securely through the explotion of light quantum properties.
@@ -88,7 +87,30 @@ export default function Hero() {
             While we will be developing this layer focused on the public channel we will be in contact with Aveiro's University teams working currently on the quantum channel protocols and their QKD devices, in a final phase of the project we hope to join both layers to make a complete system.
           </Typography>
 
+          <Divider />
+          <br />
+          <br />
 
+          <Typography
+            component="span"
+            variant="h2"
+            textAlign="center"
+            sx={{
+              display: 'flex',
+              flexDirection: { xs: 'column', md: 'row' },
+              color: (theme) =>
+                theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
+            }}
+          >
+            Check our new expansion proposal
+          </Typography>
+          <Typography variant="body1" textAlign="center" color="text.secondary">
+              Feel free to discover our new project's expansion proposal by clicking&nbsp;
+              <Link href="#" color="primary">
+                here 
+              </Link>
+              .
+          </Typography>
         </Stack>
       </Container>
     </Box>

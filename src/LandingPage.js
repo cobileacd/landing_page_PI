@@ -10,12 +10,10 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import AutoAwesomeRoundedIcon from '@mui/icons-material/AutoAwesomeRounded';
 import AppAppBar from './components/AppAppBar';
 import Hero from './components/Hero';
-import LogoCollection from './components/LogoCollection';
-import Highlights from './components/Highlights';
-import Pricing from './components/Pricing';
+import Tasks from './components/Tasks';
 import PreviousProjects from './components/PreviousProjects';
 import Features from './components/Features';
-import Testimonials from './components/Testimonials';
+import Team from './components/Team';
 import FAQ from './components/FAQ';
 import Resources from './components/Resources';
 import Footer from './components/Footer';
@@ -85,9 +83,9 @@ export default function LandingPage() {
       <Hero />
       <Box sx={{ bgcolor: 'background.default' }}>
         <Features />
-        <Testimonials />
+        <Team />
         <Divider />
-        <Highlights />
+        <Tasks />
         <PreviousProjects />
         <Divider />
         <FAQ />

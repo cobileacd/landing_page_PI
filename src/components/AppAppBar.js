@@ -102,7 +102,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('testimonials')}
+                  onClick={() => scrollToSection('team')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
@@ -110,11 +110,19 @@ function AppAppBar({ mode, toggleColorMode }) {
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('highlights')}
+                  onClick={() => scrollToSection('tasks')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
                     Tasks 
+                  </Typography>
+                </MenuItem>
+                <MenuItem
+                  onClick={() => scrollToSection('related')}
+                  sx={{ py: '6px', px: '12px' }}
+                >
+                  <Typography variant="body2" color="text.primary">
+                    Related 
                   </Typography>
                 </MenuItem>
                 <MenuItem
@@ -177,10 +185,13 @@ function AppAppBar({ mode, toggleColorMode }) {
                   <MenuItem onClick={() => scrollToSection('features')}>
                     Plan 
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('testimonials')}>
+                  <MenuItem onClick={() => scrollToSection('team')}>
                     Team 
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('highlights')}>
+                  <MenuItem onClick={() => scrollToSection('related')}>
+                    Related 
+                  </MenuItem>
+                  <MenuItem onClick={() => scrollToSection('tasks')}>
                     Tasks 
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection('faq')}>
