@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import inception from "../assets/M1.pdf";
 import elaboration from "../assets/M2.pdf";
 import prototype from "../assets/M3.pdf";
+import meeting from "../assets/GeneralMeeting.pdf";
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -111,6 +112,30 @@ export default function Resources() {
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
               Click <Link href={prototype} download="Prototype.pdf">here</Link> to download the presentation.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          expanded={expanded === 'panel4'}
+          onChange={handleChange('panel4')}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel4d-content"
+            id="panel4d-header"
+          >
+            <Typography component="h3" variant="subtitle2">
+                IT: General Meeting
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography
+              variant="body2"
+              gutterBottom
+              sx={{ maxWidth: { sm: '100%', md: '70%' } }}
+            >
+              Click <Link href={meeting} download="General_Meeting_Reconciliation_Presentation.pdf">here</Link> to download the presentation.
+              Check out the linkedin post <Link href="https://www.linkedin.com/posts/quantum-communications-group-it-av_groupmeeting-quantumtechnologies-quantumcommunications-activity-7189568113443565568-IT9h?utm_source=share&utm_medium=member_desktop">here</Link>.
             </Typography>
           </AccordionDetails>
         </Accordion>

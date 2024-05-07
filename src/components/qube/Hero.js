@@ -17,8 +17,8 @@ export default function Hero() {
         width: '100%',
         backgroundImage:
         theme.palette.mode === 'light'
-          ? 'linear-gradient(180deg, #CEE5FD, #FFF)'
-          : 'linear-gradient(#02294F, #090E10)',
+          ? 'linear-gradient(180deg, #fdcece, #FFF)'
+          : 'linear-gradient(#571818, #090E10)',
         backgroundSize: '100% 20%',
         backgroundRepeat: 'no-repeat',
       })}
@@ -33,38 +33,20 @@ export default function Hero() {
         }}
       >
         <Stack spacing={2} useFlexGap sx={{ width: { xs: '100%', sm: '70%' } }}>
-          <div>
             <Typography
-              component="h1"
               variant="h1"
-              sx={{
-                display: 'flex',
-                flexDirection: { xs: 'column', md: 'row' },
-                alignSelf: 'left',
-              }}
+              textAlign="center"
+              color={theme =>
+                  theme.palette.mode === 'light' ? 'primary.main' : 'primary.light'}
             >
-              Just another
+              QUBE
             </Typography>
-            <Typography
-              component="span"
-              variant="h1"
-              sx={{
-                display: 'flex',
-                flexDirection: { xs: 'column', md: 'row' },
-                alignSelf: 'left',
-                color: (theme) =>
-                  theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
-              }}
-            >
-              Quantum Key Reconciliation Application 
-            </Typography>
-          </div>
           <Typography variant="body1" textAlign="center" color="text.secondary">
               Facilitating the secure negotiation of cryptographic keys through Quantum Key Reconciliation, avoiding dependence on computational complexity for security.
           </Typography>
           <Typography variant="caption" textAlign="center" sx={{ opacity: 0.8 }}>
             Feel free to explore our project's repository&nbsp;
-            <Link href="https://github.com/uTigas/PI_Group14" color="primary">
+            <Link href="#" color="primary">
                here 
             </Link>
             .
@@ -87,25 +69,6 @@ export default function Hero() {
             While we will be developing this layer focused on the public channel we will be in contact with Aveiro's University teams working currently on the quantum channel protocols and their QKD devices, in a final phase of the project we hope to join both layers to make a complete system.
           </Typography>
 
-          <Divider />
-          <br />
-          <br />
-
-          <Typography
-            variant="h2"
-            textAlign="center"
-            color={(theme) =>
-                theme.palette.mode === 'light' ? 'primary.main' : 'primary.light'}
-          >
-            Check our new expansion proposal
-          </Typography>
-          <Typography variant="body1" textAlign="center" color="text.secondary">
-              Feel free to discover our new project's expansion proposal by clicking&nbsp;
-              <Link href="/qube" color="primary">
-                here 
-              </Link>
-              .
-          </Typography>
         </Stack>
       </Container>
     </Box>
