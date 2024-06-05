@@ -8,6 +8,7 @@ import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
+import QeepHero from './qube/QeepHero';
 
 export default function Hero() {
   return (
@@ -34,17 +35,6 @@ export default function Hero() {
       >
         <Stack spacing={2} useFlexGap sx={{ width: { xs: '100%', sm: '70%' } }}>
           <div>
-            <Typography
-              component="h1"
-              variant="h1"
-              sx={{
-                display: 'flex',
-                flexDirection: { xs: 'column', md: 'row' },
-                alignSelf: 'left',
-              }}
-            >
-              Just another
-            </Typography>
             <Typography
               component="span"
               variant="h1"
@@ -88,25 +78,9 @@ export default function Hero() {
           </Typography>
 
           <Divider />
-          <br />
-          <br />
-
-          <Typography
-            variant="h2"
-            textAlign="center"
-            color={(theme) =>
-                theme.palette.mode === 'light' ? 'primary.main' : 'primary.light'}
-          >
-            Check our new expansion proposal
-          </Typography>
-          <Typography variant="body1" textAlign="center" color="text.secondary">
-              Feel free to discover our new project's expansion proposal by clicking&nbsp;
-              <Link href="/qube" color="primary">
-                here 
-              </Link>
-              .
-          </Typography>
         </Stack>
+        <QeepHero />
+        <Divider />
       </Container>
     </Box>
   );

@@ -162,19 +162,19 @@ const getDesignTokens = (mode) => ({
       fontSize: 18,
     },
     subtitle2: {
-      fontSize: 16,
+      fontSize: 18,
     },
     body1: {
       fontWeight: 400,
-      fontSize: 15,
+      fontSize: 22,
     },
     body2: {
       fontWeight: 400,
-      fontSize: 14,
+      fontSize: 18,
     },
     caption: {
       fontWeight: 400,
-      fontSize: 12,
+      fontSize: 18,
     },
   },
 });

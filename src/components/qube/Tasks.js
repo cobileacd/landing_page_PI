@@ -16,13 +16,13 @@ import { useTheme } from '@mui/system';
 const items = [
   {
     module: 'Communication',
-    title: 'Task 1 (David Cobileac & Tiago Portugal)',
+    title: 'Task 1 (David Cobileac)',
     description:
       'Develop and manage projects website, reports, presentations and roles definition.',
   },
   {
     module: 'Communication',
-    title: 'Task 2 (David Cobileac & Tiago Portugal)',
+    title: 'Task 2 (David Cobileac)',
     description:
       'Manage projects Git repository.',
   },
@@ -94,7 +94,7 @@ const items = [
   },
   {
     module: 'Development',
-    title: 'Task 4 (Tiago Portugal)',
+    title: 'Task 4 (David Cobileac)',
     description:
     'Make a libray out of the system.',
   },

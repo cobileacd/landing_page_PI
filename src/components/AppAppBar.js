@@ -7,13 +7,16 @@ import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Divider from '@mui/material/Divider';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
+import getLPTheme from '../getLPTheme';
 import ToggleColorMode from './ToggleColorMode';
 
 import Logo from '../assets/logo.svg';
+import LogoDark from '../assets/logo_black.svg';
 
 const logoStyle = {
   width: '50px',
@@ -23,6 +26,7 @@ const logoStyle = {
 
 function AppAppBar({ mode, toggleColorMode }) {
   const [open, setOpen] = React.useState(false);
+  const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -86,9 +90,7 @@ function AppAppBar({ mode, toggleColorMode }) {
               }}
             >
               <img
-                src={
-                  Logo
-                }
+                src={ LPtheme.palette.mode === 'light' ? LogoDark : Logo  }
                 style={logoStyle}
                 alt="logo of sitemark"
               />

@@ -7,7 +7,7 @@ import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import AutoAwesomeRoundedIcon from '@mui/icons-material/AutoAwesomeRounded';
 import AppAppBar from './components/qube/AppAppBar';
-import Hero from './components/qube/Hero';
+import Hero from './components/qube/QeepHero';
 import Features from './components/Features';
 import Tasks from './components/qube/Tasks';
 import Footer from './components/Footer';

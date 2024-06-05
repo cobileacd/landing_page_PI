@@ -11,6 +11,7 @@ import inception from "../assets/M1.pdf";
 import elaboration from "../assets/M2.pdf";
 import prototype from "../assets/M3.pdf";
 import meeting from "../assets/GeneralMeeting.pdf";
+import final from "../assets/M4.pdf";
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -136,6 +137,29 @@ export default function Resources() {
             >
               Click <Link href={meeting} download="General_Meeting_Reconciliation_Presentation.pdf">here</Link> to download the presentation.
               Check out the linkedin post <Link href="https://www.linkedin.com/posts/quantum-communications-group-it-av_groupmeeting-quantumtechnologies-quantumcommunications-activity-7189568113443565568-IT9h?utm_source=share&utm_medium=member_desktop">here</Link>.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          expanded={expanded === 'panel5'}
+          onChange={handleChange('panel5')}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel5d-content"
+            id="panel5d-header"
+          >
+            <Typography component="h3" variant="subtitle2">
+                M4: Final Presentation 
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography
+              variant="body2"
+              gutterBottom
+              sx={{ maxWidth: { sm: '100%', md: '70%' } }}
+            >
+              Click <Link href={final} download="FinalPresentation.pdf">here</Link> to download the presentation.
             </Typography>
           </AccordionDetails>
         </Accordion>

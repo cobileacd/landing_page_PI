@@ -11,17 +11,9 @@ import { useTheme } from '@mui/system';
 
 const teamComp = [
   {
-    avatar: <Avatar alt="Diogo Marto" src="/static/images/avatar/1.jpg" />,
-    name: 'Diogo Marto',
-    occupation: 'Developer',
-    contact: 'diogo.marto@ua.pt',
-    testimonial:
-      "Responsible for developing a part of the system, including designing it to fit into the architecture",
-  },
-  {
     avatar: <Avatar alt="Tiago Pereira" src="/static/images/avatar/3.jpg" />,
     name: 'Tiago Pereira',
-    occupation: 'Product Manager',
+    occupation: 'Team Leader',
     contact: 'tfgp@ua.pt',
     testimonial:
       "Leads the planning of the project, coordinates interactions with the stakeholders, and keeps the project team focused on meeting the project objectives."
@@ -35,20 +27,20 @@ const teamComp = [
       "Coordinates the technical design of the system and has overall responsibility for facilitating the major technical decisions expressed as software architecture.",
   },
   {
-    avatar: <Avatar alt="Tiago Portugal" src="/static/images/avatar/4.jpg" />,
-    name: 'Tiago Portugal',
-    occupation: 'Tester',
-    contact: 'tiago.portugal@ua.pt',
+    avatar: <Avatar alt="Diogo Marto" src="/static/images/avatar/1.jpg" />,
+    name: 'Diogo Marto',
+    occupation: 'DevOps',
+    contact: 'diogo.marto@ua.pt',
     testimonial:
-      "Responsible for the core activities of the test effort. Those activities include identifying, defining, implementing, and conducting the necessary tests.",
+      "Responsible for the combination of practices and tools that create an infrastructure that increases the team’s ability to deliver applications and services at high velocity, without sacrificing quality",
   },
   {
     avatar: <Avatar alt="David Cobileac" src="/static/images/avatar/2.jpg" />,
     name: 'David Cobileac',
-    occupation: 'Developer',
+    occupation: 'Quality Assurance',
     contact: 'cobileacd@ua.pt',
     testimonial:
-      "Responsible for developing a part of the system, unit-testing, and integrating the components that are part of the solution.",
+      "Responsible for ensuring the quality and reliability of the delivered system."
   },
 ];
 

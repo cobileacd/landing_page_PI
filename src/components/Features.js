@@ -169,7 +169,7 @@ export default function Features() {
               Project plan 
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               color="text.secondary"
               sx={{ mb: { xs: 2, sm: 4 } }}
             >
@@ -331,7 +331,7 @@ export default function Features() {
                     : items[selectedItemIndex].imageDark,
               }}
             >
-              <Typography variant="body1" color="text.secondary">
+              <Typography variant="body2" color="text.secondary">
                 {items[selectedItemIndex].description}
                 <ul style={{ listStyleType: 'none'}}>
                   {items[selectedItemIndex].goals.map((goal, index) => (
