@@ -15,7 +15,7 @@ const FrontPage = () => {
       color={theme.palette.text.primary}
     >
       <Box textAlign="center">
-        <Typography variant="h2">Just Another Quantum Key Reconciliation Application</Typography>
+        <Typography variant="h2">Another Quantum Key Reconciliation Application</Typography>
       </Box>
     </Box>
   );

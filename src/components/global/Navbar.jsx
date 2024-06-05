@@ -26,7 +26,7 @@ const Navbar = () => {
                 <Toolbar>
                     <img src={Logo} alt="Logo" style={{ maxWidth: '50px', height: 'auto', marginRight: '10px' }} />
                     <Typography variant="h3" component="div" sx={{ flexGrow: 1 }}>
-                        JAQKDRA
+                        QeeP
                     </Typography>
 
                     <Button

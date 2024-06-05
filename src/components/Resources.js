@@ -12,6 +12,8 @@ import elaboration from "../assets/M2.pdf";
 import prototype from "../assets/M3.pdf";
 import meeting from "../assets/GeneralMeeting.pdf";
 import final from "../assets/M4.pdf";
+import report from "../assets/RelatorioFinal_QeeP.pdf";
+import Poster from "../assets/ST2024-Poster.pdf";
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -160,6 +162,52 @@ export default function Resources() {
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
               Click <Link href={final} download="FinalPresentation.pdf">here</Link> to download the presentation.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          expanded={expanded === 'panel6'}
+          onChange={handleChange('panel6')}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel6d-content"
+            id="panel6d-header"
+          >
+            <Typography component="h3" variant="subtitle2">
+                Final Report 
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography
+              variant="body2"
+              gutterBottom
+              sx={{ maxWidth: { sm: '100%', md: '70%' } }}
+            >
+              Click <Link href={report} download="Report.pdf">here</Link> to download the report.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          expanded={expanded === 'panel7'}
+          onChange={handleChange('panel7')}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel7d-content"
+            id="panel7d-header"
+          >
+            <Typography component="h3" variant="subtitle2">
+                Poster 
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography
+              variant="body2"
+              gutterBottom
+              sx={{ maxWidth: { sm: '100%', md: '70%' } }}
+            >
+              Click <Link href={Poster} download="Poster.pdf">here</Link> to download the poster.
             </Typography>
           </AccordionDetails>
         </Accordion>
